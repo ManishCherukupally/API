@@ -5,23 +5,7 @@ function submitData(){
 
     let postData={"title":titleInput,"body":bodyInput,"usrid": userIdInput};
      
-    //      fetch("http://jsonplaceholder.typicode.com/posts",{
-    //     method:"POST", 
-    //     body:JSON.stringify(postData),
-    //     headers:{
-    //         "Content-Type": "application/json"
-    //     }
-    // })
-    // .then(res =>{
-    //     return res.json()
-    // })
-    // .then(data=> {
-    //     console.log(data)
-    //     dataTable(data)
-
-    // });
-
-    fetch("http://localhost:4000/",{
+         fetch("http://jsonplaceholder.typicode.com/posts",{
         method:"POST", 
         body:JSON.stringify(postData),
         headers:{
@@ -36,6 +20,7 @@ function submitData(){
         dataTable(data)
 
     });
+
 }
     function dataTable(post){
     let tblBody=document.querySelector('.tablebody1')
