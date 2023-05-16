@@ -1,8 +1,8 @@
 
 
 
-    var getTheAnswer = function () {
+    let getTheAnswer =  () => {
         return 42;
     };
-    export {getTheAnswer};
-    
+   
+    console.log(getTheAnswer());
